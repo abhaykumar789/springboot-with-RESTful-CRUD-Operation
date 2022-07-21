@@ -2,6 +2,8 @@ package com.cgi.main.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,15 +16,28 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cgi.main.EmsappApplication;
 import com.cgi.main.entity.Employee;
 import com.cgi.main.service.EmployeeService;
 @RestController
 @RequestMapping("/empsapp/")
 public class EmployeeController {
-
+		
 	@Autowired
 	private EmployeeService eservice;
-
+	private static Logger log=LoggerFactory.getLogger(EmsappApplication.class);
+	 
+	@GetMapping("message")
+	public String message() {
+		try {
+			log.info("INSIDE THE message method");
+			//throw new RuntimeException("Some Exception...");		
+		}catch(Exception e) {
+			log.error("some error:"+e.getMessage());	
+		}
+		
+		return "Hello World";
+	}
 	// handler methods
 
 	// Write the Handler Method for handling the POST request which is coming

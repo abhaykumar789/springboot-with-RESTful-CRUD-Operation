@@ -9,6 +9,6 @@ import com.cgi.main.entity.Employee;
 @Repository
 public interface EmployeeRepository extends  JpaRepository<Employee,Integer> {
 	
-	public List<Employee> sortByName(String name);
+	 
 	
 }

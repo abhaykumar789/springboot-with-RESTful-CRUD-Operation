@@ -1,0 +1,9 @@
+2022-09-21 19:09:09 [http-nio-9991-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-21 19:09:09 [http-nio-9991-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2022-09-21 19:09:09 [http-nio-9991-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 1 ms
+2022-09-21 19:09:09 [http-nio-9991-exec-2] INFO  com.cgi.main.EmsappApplication                    -EMPLOYEEINFO-Employee [id=0, name=ADIL1, salary=50000.0]
+2022-09-21 19:09:10 [http-nio-9991-exec-2] INFO  com.cgi.main.EmsappApplication                    -DATA-STORE
+2022-10-21 19:10:09 [RMI TCP Connection(21)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin-Application shutdown requested.
+2022-10-21 19:10:09 [RMI TCP Connection(21)-127.0.0.1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-21 19:10:09 [RMI TCP Connection(21)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                -HikariPool-5 - Shutdown initiated...
+2022-10-21 19:10:09 [RMI TCP Connection(21)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource                -HikariPool-5 - Shutdown completed.
